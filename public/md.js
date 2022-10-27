@@ -1,6 +1,7 @@
 import {unified} from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
+import remarkGFM from 'remark-gfm'
 import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
 import rehypeRaw from 'rehype-raw'
@@ -35,6 +36,7 @@ export default {
       .use(remarkRehype, {
         allowDangerousHtml: true
       })
+      .use(remarkGFM)
       .use(rehypeRaw)
       .use(rehypeSanitize)
       .use(rehypeStringify)
