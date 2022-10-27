@@ -7,7 +7,7 @@
     "clean": "rm -rf dist",
     "build": "vite build public --out-dir ../dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "npm run clean && npm run build -- --base /ipfs-althing-talk ",
+    "prepublish": "npm run clean && npm run build -- --base /state-of-ipfs-in-js-2022-talk",
     "start": "vite public --config ./vite.config.js",
     "deploy": "npm run prepublish && gh-pages -d dist"
   },
