@@ -1,0 +1,32 @@
+{
+  "name": "ipfs-althing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "vite build public --out-dir ../dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run clean && npm run build -- --base /ipfs-althing-talk ",
+    "start": "vite public --config ./vite.config.js",
+    "deploy": "npm run prepublish && gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rehype-raw": "^6.1.1",
+    "rehype-sanitize": "^5.0.1",
+    "rehype-stringify": "^9.0.3",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "terminatorator": "^1.0.0",
+    "unified": "^10.1.2"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "gh-pages": "^2.0.1",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "vite": "^2.9.14"
+  }
+}
