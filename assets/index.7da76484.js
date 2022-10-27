@@ -747,6 +747,8 @@ Type \`help\` for help
 <img src="slides/transfer-speeds-js.png" width="100%" />
 `,Xd=`# \u{1F6B4}\u200D\u2640\uFE0F\u{1F4A8} Performance improvements
 
+## Single file exchange over bitswap
+
 |        | go-go   | go-js   | js-go   | js-js   | \u03B4          |
 |--------|---------|---------|---------|---------|------------|
 | 1.02KB | 331ms   | 300ms   | 189ms   | 157ms   | 47% faster |
