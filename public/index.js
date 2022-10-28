@@ -19,6 +19,7 @@ import slide12 from './slides/12.md?raw'
 import slide13 from './slides/13.md?raw'
 import slide14 from './slides/14.md?raw'
 import slide15 from './slides/15.md?raw'
+import slide16 from './slides/16.md?raw'
 
 createTerminal(document.getElementById('terminal'), {
   welcome: `<pre style="font-family: monospace">
@@ -96,6 +97,9 @@ createTerminal(document.getElementById('terminal'), {
     },
     '~/Documents/talks/ipfs-in-js-2022/15.md': {
       content: slide15
+    },
+    '~/Documents/talks/ipfs-in-js-2022/16.md': {
+      content: slide16
     }
   },
   history: 'cli-history', // the localStorage key used to store terminal history
