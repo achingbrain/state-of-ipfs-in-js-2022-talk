@@ -749,26 +749,26 @@ Type \`help\` for help
 
 ## Single file exchange over bitswap
 
-|        | go-go   | go-js   | js-go   | js-js   | \u03B4          |
-|--------|---------|---------|---------|---------|------------|
-| 1.02KB | 331ms   | 300ms   | 189ms   | 157ms   | 47% faster |
-| 1.05MB | 728ms   | 619ms   | 333ms   | 323ms   | 44% faster |
-| 67.1MB | 23876ms | 18163ms | 16461ms | 10906ms | 45% faster |
-| 134MB  | 42280ms | 34229ms | 33135ms | 23818ms | 56% faster |
+|        | go-go   | go-js   | js-go   | js-js   | \u03B4           |
+|--------|---------|---------|---------|---------|-------------|
+| 1.02KB | 331ms   | 300ms   | 189ms   | 157ms   | \u{1F96C} 47% faster \u{1F96C} |
+| 1.05MB | 728ms   | 619ms   | 333ms   | 323ms   | \u{1F7E9} 44% faster \u{1F7E9} |
+| 67.1MB | 23876ms | 18163ms | 16461ms | 10906ms | \u{1F7E2} 45% faster \u{1F7E2} |
+| 134MB  | 42280ms | 34229ms | 33135ms | 23818ms | \u{1F49A} 56% faster \u{1F49A} |
 
 Takeaway: JavaScript is not slow!
 
 `,qd=`# \u{1F6D1} The end of the road?
 
 
-
+\`\`\`
  ___  ,--.  __________________________/   ,   /_______
     'O---O'~
  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  ,--.   _ _ _ _ _
          _______                      ~'O---O'
  _______| Future >____        __________________________
            ||        /   ,   /
-
+\`\`\`
 
 `,Jd=`# \u{1F3D7}\uFE0F js-IPFS Architecture
 
