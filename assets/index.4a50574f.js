@@ -565,7 +565,7 @@ body {
 Type \`help\` for help
 <br/>
 <br/>`;function ne(_,D){return de.apply(this,arguments)}function de(){return de=T()(l.a.mark(function _(D,w){var z,Y,y,X,fe,V,he,E,m,K,J,ee,b,L,U,ie,se,pe,le,Te,Ce,He,nt,ft,ze,Ze,on;return l.a.wrap(function(rt){for(;;)switch(rt.prev=rt.next){case 0:if(on=function(ae){ae.preventDefault();var me=I()(m.value);if(me._=me._.map(function(Z){return Z.toString()}),me._.length===0)m.value+="	";else if(me._.length===1&&!m.value.endsWith(" ")){var ke=Object.keys(Y.commands).map(function(Z){return Z.split("/").pop()}).filter(function(Z){return Z.startsWith(me._[0])});ke.length===1?m.value!==ke[0]&&(m.value=ke[0]):Y.api.print(ke.join(" "))}else{var Me=me._[me._.length-1],M=Ze(Me),C=M.node,x=M.path,F=M.remainder;if(C.children==null)return;var B=Object.keys(C.children).map(function(Z){return[x,Z].filter(Boolean).join("/")}).filter(function(Z){return Z.split("/").pop().startsWith(".")?!1:!!(me._.length===1||Me.endsWith("/")||Z.split("/").pop().startsWith(F))});if(B.length===1){var G=B[0];if(me._[me._.length-1]===G){var re=Y.fs.getNode(Y.env.PWD+"/"+G);re.children!=null&&(m.value+="/")}else me._.length===1?m.value=[].concat(s()(me._),[G]).join(" "):m.value=[].concat(s()(me._.slice(0,me._.length-1)),[G]).join(" ")}else Y.api.print(B.join(" "))}},Ze=function(ae){if(!ae)return{node:Y.fs.getNode(Y.env.PWD),path:"",remainder:""};if(!ae.endsWith("/")){var me=ae.split("/"),ke=me.pop();return{node:Y.fs.getNode(Y.env.PWD+"/"+me.join("/")),path:me.join("/"),remainder:ke}}ae=ae.replace(/\/\//g,"/"),ae=ae.substring(0,ae.length-1);var Me=Y.fs.getNode(Y.env.PWD+"/"+ae);return Me?{node:Me,path:ae,remainder:""}:{node:Y.fs.getNode(Y.env.PWD),path:ae,remainder:ae}},ze=function(){return ze=T()(l.a.mark(function ae(me){var ke,Me,M,C,x,F,B,G,re,Z=arguments;return l.a.wrap(function(Ne){for(;;)switch(Ne.prev=Ne.next){case 0:if(ke=Z.length>1&&Z[1]!==void 0?Z[1]:{},ke.hidden){Ne.next=5;break}return me&&(y[y.length]=me,window.localStorage[w.history]=JSON.stringify(y),X=y.length),Ne.next=5,se("".concat(w.prompt," ").concat(me));case 5:if(me){Ne.next=7;break}return Ne.abrupt("return");case 7:if(Me=I()(me),M=Me._.shift(),C=Y.env.PATH.split(":").find(function(Re){if(w.commands["".concat(Re,"/").concat(M)])return!0}),C){Ne.next=12;break}return Ne.abrupt("return",se(M+": command not found"));case 12:M="".concat(C,"/").concat(M),x=w.commands[M],x.args&&(Me=I()(me,x.args),Me._.shift());try{Y.env._=me,B=x.handler(Me,Y),F=se(B)}catch(Re){console.error(Re),F=se(Re.message)}return ke.hidden||(G="~/.bash_history",re="",j.default.getNode(G,Y)&&(re=j.default.read(G,Y),re+=`
-`),re+=me,j.default.write(G,re,Y)),Ne.next=19,F;case 19:w.prompt="".concat(Y.env.USER," ").concat(Y.env.PWD===Y.env.HOME?"~":Y.env.PWD.split("/").pop()," ").concat(Y.env.USER==="root"?"#":"$"),J.innerHTML=w.prompt;case 21:case"end":return Ne.stop()}},ae)})),ze.apply(this,arguments)},ft=function(ae){return ze.apply(this,arguments)},He=function(){for(var ae=m.parentElement;ae;){if((ae.className||"").includes("active"))return!0;ae=ae.parentElement}},Ce=function(){var ae=arguments.length>0&&arguments[0]!==void 0?arguments[0]:"";K.insertAdjacentHTML("beforeEnd",ae),ae&&ae.trim().substr(-1)!==">"&&K.insertAdjacentHTML("beforeEnd","<br/>"),m.scrollIntoView()},Te=function(){return Te=T()(l.a.mark(function ae(){var me,ke,Me,M,C,x,F,B,G,re=arguments;return l.a.wrap(function(oe){for(;;)switch(oe.prev=oe.next){case 0:if(me=re.length>0&&re[0]!==void 0?re[0]:"",oe.prev=1,!((me[Symbol.asyncIterator]||me[Symbol.iterator])&&typeof me!="string")){oe.next=39;break}ke=!0,Me=!1,oe.prev=5,C=g()(me);case 7:return oe.next=9,C.next();case 9:return x=oe.sent,ke=x.done,oe.next=13,x.value;case 13:if(F=oe.sent,ke){oe.next=21;break}return B=F,oe.next=18,le(B);case 18:ke=!0,oe.next=7;break;case 21:oe.next=27;break;case 23:oe.prev=23,oe.t0=oe.catch(5),Me=!0,M=oe.t0;case 27:if(oe.prev=27,oe.prev=28,!(!ke&&C.return!=null)){oe.next=32;break}return oe.next=32,C.return();case 32:if(oe.prev=32,!Me){oe.next=35;break}throw M;case 35:return oe.finish(32);case 36:return oe.finish(27);case 37:oe.next=48;break;case 39:if(!me.then){oe.next=47;break}return oe.next=42,me;case 42:return G=oe.sent,oe.next=45,le(G);case 45:oe.next=48;break;case 47:Ce(me);case 48:oe.next=54;break;case 50:oe.prev=50,oe.t1=oe.catch(1),console.error(oe.t1),Ce(oe.t1.message);case 54:case"end":return oe.stop()}},ae,null,[[1,50],[5,23,27,37],[28,,32,36]])})),Te.apply(this,arguments)},le=function(){return Te.apply(this,arguments)},pe=function(){return pe=T()(l.a.mark(function ae(){var me,ke=arguments;return l.a.wrap(function(M){for(;;)switch(M.prev=M.next){case 0:return me=ke.length>0&&ke[0]!==void 0?ke[0]:"",J.classList.add("hidden"),M.next=4,le(me);case 4:J.classList.remove("hidden");case 5:case"end":return M.stop()}},ae)})),pe.apply(this,arguments)},se=function(){return pe.apply(this,arguments)},ie=function(){K.innerHTML="",m.value="",ee.style.minHeight=""},U=function(ae){if(He()&&ae.stopPropagation(),ae.keyCode===R.K&&(ae.ctrlKey||ae.metaKey))return ie();if(ae.keyCode===R.TAB)return on(ae);if(ae.keyCode===R.ENTER){var me=m.value;return m.value="",ft(me)}},L=function(ae){ae.keyCode===R.ESCAPE&&(m.value="",ae.stopPropagation(),ae.preventDefault()),y.length&&(ae.keyCode===R.ARROW_UP||ae.keyCode===R.ARROW_DOWN)&&(y[X]?y[X]=m.value:fe=m.value,ae.keyCode===R.ARROW_UP?(X--,X<0&&(X=0)):ae.keyCode===R.ARROW_DOWN&&(X++,X>y.length&&(X=y.length)),m.value=y[X]?y[X]:fe,m.value=m.value)},b=function(){m.value=m.value},D){rt.next=16;break}throw new Error("Container is required");case 16:return z={welcome:q,theme:"interlaced",commands:{},files:{},history:"cli-history",user:"alex"},w=w||f()({},z),w.welcome=w.welcome||z.welcome,w.theme=w.theme||z.theme,w.commands=w.commands||z.commands,w.user=w.user||z.user,Object.keys(v).forEach(function(Oe){w.commands[Oe]=w.commands[Oe]||v[Oe]}),w.commands["/usr/bin/clear"]={handler:ie},Y={env:{USER:"root",TERM_PROGRAM:"".concat(P.name,"@").concat(P.version),SHELL:"/bin/".concat(P.name),TERM:"webterm",TMPDIR:"/tmp",PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin",PWD:"/root",HOME:"/root"},commands:w.commands,fs:j.default},y=window.localStorage[w.history]?JSON.parse(window.localStorage[w.history]):[],X=y.length,fe="",V=D,V.classList.add("terminal"),V.classList.add("terminal-"+w.theme),V.insertAdjacentHTML("beforeEnd",`
+`),re+=me,j.default.write(G,re,Y)),Ne.next=19,F;case 19:w.prompt="".concat(Y.env.USER," ").concat(Y.env.PWD===Y.env.HOME?"~":Y.env.PWD.split("/").pop()," ").concat(Y.env.USER==="root"?"#":"$"),J.innerHTML=w.prompt;case 21:case"end":return Ne.stop()}},ae)})),ze.apply(this,arguments)},ft=function(ae){return ze.apply(this,arguments)},He=function(){for(var ae=m.parentElement;ae;){if((ae.className||"").includes("active"))return!0;ae=ae.parentElement}},Ce=function(){var ae=arguments.length>0&&arguments[0]!==void 0?arguments[0]:"";K.insertAdjacentHTML("beforeEnd",ae),ae&&ae.trim().substr(-1)!==">"&&K.insertAdjacentHTML("beforeEnd","<br/>"),m.scrollIntoView()},Te=function(){return Te=T()(l.a.mark(function ae(){var me,ke,Me,M,C,x,F,B,G,re=arguments;return l.a.wrap(function(oe){for(;;)switch(oe.prev=oe.next){case 0:if(me=re.length>0&&re[0]!==void 0?re[0]:"",oe.prev=1,!((me[Symbol.asyncIterator]||me[Symbol.iterator])&&typeof me!="string")){oe.next=39;break}ke=!0,Me=!1,oe.prev=5,C=g()(me);case 7:return oe.next=9,C.next();case 9:return x=oe.sent,ke=x.done,oe.next=13,x.value;case 13:if(F=oe.sent,ke){oe.next=21;break}return B=F,oe.next=18,le(B);case 18:ke=!0,oe.next=7;break;case 21:oe.next=27;break;case 23:oe.prev=23,oe.t0=oe.catch(5),Me=!0,M=oe.t0;case 27:if(oe.prev=27,oe.prev=28,!(!ke&&C.return!=null)){oe.next=32;break}return oe.next=32,C.return();case 32:if(oe.prev=32,!Me){oe.next=35;break}throw M;case 35:return oe.finish(32);case 36:return oe.finish(27);case 37:oe.next=48;break;case 39:if(!me.then){oe.next=47;break}return oe.next=42,me;case 42:return G=oe.sent,oe.next=45,le(G);case 45:oe.next=48;break;case 47:Ce(me);case 48:oe.next=54;break;case 50:oe.prev=50,oe.t1=oe.catch(1),console.error(oe.t1),Ce(oe.t1.message);case 54:case"end":return oe.stop()}},ae,null,[[1,50],[5,23,27,37],[28,,32,36]])})),Te.apply(this,arguments)},le=function(){return Te.apply(this,arguments)},pe=function(){return pe=T()(l.a.mark(function ae(){var me,ke=arguments;return l.a.wrap(function(M){for(;;)switch(M.prev=M.next){case 0:return me=ke.length>0&&ke[0]!==void 0?ke[0]:"",J.classList.add("hidden"),M.next=4,le(me);case 4:J.classList.remove("hidden");case 5:case"end":return M.stop()}},ae)})),pe.apply(this,arguments)},se=function(){return pe.apply(this,arguments)},ie=function(){K.innerHTML="",ee.style.minHeight=""},U=function(ae){if(He()&&ae.stopPropagation(),ae.keyCode===R.K&&(ae.ctrlKey||ae.metaKey))return ie();if(ae.keyCode===R.TAB)return on(ae);if(ae.keyCode===R.ENTER){var me=m.value;return m.value="",ft(me)}},L=function(ae){ae.keyCode===R.ESCAPE&&(m.value="",ae.stopPropagation(),ae.preventDefault()),y.length&&(ae.keyCode===R.ARROW_UP||ae.keyCode===R.ARROW_DOWN)&&(y[X]?y[X]=m.value:fe=m.value,ae.keyCode===R.ARROW_UP?(X--,X<0&&(X=0)):ae.keyCode===R.ARROW_DOWN&&(X++,X>y.length&&(X=y.length)),m.value=y[X]?y[X]:fe,m.value=m.value)},b=function(){m.value=m.value},D){rt.next=16;break}throw new Error("Container is required");case 16:return z={welcome:q,theme:"interlaced",commands:{},files:{},history:"cli-history",user:"alex"},w=w||f()({},z),w.welcome=w.welcome||z.welcome,w.theme=w.theme||z.theme,w.commands=w.commands||z.commands,w.user=w.user||z.user,Object.keys(v).forEach(function(Oe){w.commands[Oe]=w.commands[Oe]||v[Oe]}),w.commands["/usr/bin/clear"]={handler:ie},Y={env:{USER:"root",TERM_PROGRAM:"".concat(P.name,"@").concat(P.version),SHELL:"/bin/".concat(P.name),TERM:"webterm",TMPDIR:"/tmp",PATH:"/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin",PWD:"/root",HOME:"/root"},commands:w.commands,fs:j.default},y=window.localStorage[w.history]?JSON.parse(window.localStorage[w.history]):[],X=y.length,fe="",V=D,V.classList.add("terminal"),V.classList.add("terminal-"+w.theme),V.insertAdjacentHTML("beforeEnd",`
   <div class="background">
     <div class="interlace"></div>
   </div>
@@ -671,7 +671,7 @@ Type \`help\` for help
 
 `,Wd=`# \u{1F69C} Traction
 
-* ~8600 \`ipfs-core\` downloads per week (up from ~4500 12 months ago)
+* ~11,000 \`ipfs-core\` downloads per week (up from ~7,000 12 months ago)
 
 <img src="slides/growth.png" alt="js-ipfs growth" width="500" />
 
@@ -689,7 +689,7 @@ Type \`help\` for help
   * Berty
   * Block
   * & more!
-`,Yd=`# \u{1F381} js-IPFS Releases
+`,Yd=`# \u{1F381} js-IPFS Releases in the last 12 months
 
 ##\xA00.59.x - September 2021
 
@@ -747,6 +747,9 @@ Type \`help\` for help
 <img src="slides/transfer-speeds-js.png" width="100%" />
 `,Xd=`# \u{1F6B4}\u200D\u2640\uFE0F\u{1F4A8} Performance improvements
 
+<img src="slides/transfer-speeds-just-js.png" width="100%" />
+`,qd=`# \u{1F6B4}\u200D\u2640\uFE0F\u{1F4A8} Performance improvements
+
 ## Single file exchange over bitswap
 
 |        | go-go   | go-js   | js-go   | js-js   | \u03B4           |
@@ -758,7 +761,7 @@ Type \`help\` for help
 
 Takeaway: JavaScript is not slow!
 
-`,qd=`# \u{1F6D1} The end of the road?
+`,Jd=`# \u{1F6D1} The end of the road?
 
 
 \`\`\`
@@ -770,7 +773,7 @@ Takeaway: JavaScript is not slow!
            ||        /   ,   /
 \`\`\`
 
-`,Jd=`# \u{1F3D7}\uFE0F js-IPFS Architecture
+`,Zd=`# \u{1F3D7}\uFE0F js-IPFS Architecture
 
 > Boxes with lines drawn between them
 
@@ -805,7 +808,7 @@ Takeaway: JavaScript is not slow!
 \u2502             \u2502 \u2502              \u2502
 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
 \`\`\`
-`,Zd=`# \u{1F3D7}\uFE0F your-IPFS Architecture
+`,e4=`# \u{1F3D7}\uFE0F your-IPFS Architecture
 
 > Boxes with lines drawn between them
 
@@ -840,7 +843,7 @@ Takeaway: JavaScript is not slow!
 \u2502             \u2502 \u2502              \u2502
 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
 \`\`\`
-`,e4=`# \u{1F3D7}\uFE0F archive-IPFS Architecture
+`,t4=`# \u{1F3D7}\uFE0F archive-IPFS Architecture
 
 > Boxes with lines drawn between them
 
@@ -869,7 +872,7 @@ Takeaway: JavaScript is not slow!
 \u2502                              \u2502
 \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518
 \`\`\`
-`,t4=`# \u{1F6E3}\uFE0F Roadmap
+`,n4=`# \u{1F6E3}\uFE0F Roadmap
 
 ## \u2B22 Pomegranate
 
@@ -893,13 +896,13 @@ Takeaway: JavaScript is not slow!
 * bitswap - https://www.npmjs.com/package/ipfs-bitswap
 * libp2p - https://www.npmjs.com/package/libp2p
 * blockstore - https://www.npmjs.com/package/interface-blockstore
-`,n4=`# \u{1F339} What's in a name?
+`,r4=`# \u{1F339} What's in a name?
 
 * Temporary name: Pomegranate
 * Help us choose a new name!
 
 <img src="slides/qr.png" width="50%" />
-`,r4=`# \u{1F305} The end! (of the beginning)
+`,i4=`# \u{1F305} The end! (of the beginning)
 
 <img src="slides/js-ipfs.svg" alt="js-ipfs logo" width="200" />
 
@@ -928,4 +931,4 @@ Takeaway: JavaScript is not slow!
        \u2588\u2588   \u2588\u2588      \u2588\u2588     \u2588\u2588      \u2588\u2588\u2588\u2588  \u2588\u2588 \u2588\u2588      \u2588\u2588
         \u2588\u2588\u2588\u2588\u2588  \u2588\u2588\u2588\u2588\u2588\u2588\u2588     \u2588\u2588\u2588\u2588\u2588\u2588\u2588  \u2588\u2588\u2588\u2588\u2588\u2588  \u2588\u2588\u2588\u2588\u2588\u2588\u2588 \u2588\u2588\u2588\u2588\u2588\u2588\u2588
 </pre>
-<br/>`,theme:"interlaced",commands:{"/usr/local/bin/md":Gd},files:{"~/Documents/talks/ipfs-in-js-2022/0.md":{content:jd},"~/Documents/talks/ipfs-in-js-2022/1.md":{content:Kd},"~/Documents/talks/ipfs-in-js-2022/2.md":{content:zd},"~/Documents/talks/ipfs-in-js-2022/3.md":{content:Wd},"~/Documents/talks/ipfs-in-js-2022/4.md":{content:Yd},"~/Documents/talks/ipfs-in-js-2022/5.md":{content:Qd},"~/Documents/talks/ipfs-in-js-2022/6.md":{content:Vd},"~/Documents/talks/ipfs-in-js-2022/7.md":{content:$d},"~/Documents/talks/ipfs-in-js-2022/8.md":{content:Xd},"~/Documents/talks/ipfs-in-js-2022/9.md":{content:qd},"~/Documents/talks/ipfs-in-js-2022/10.md":{content:Jd},"~/Documents/talks/ipfs-in-js-2022/11.md":{content:Zd},"~/Documents/talks/ipfs-in-js-2022/12.md":{content:e4},"~/Documents/talks/ipfs-in-js-2022/13.md":{content:t4},"~/Documents/talks/ipfs-in-js-2022/14.md":{content:n4},"~/Documents/talks/ipfs-in-js-2022/15.md":{content:r4}},history:"cli-history",user:"alex"});
+<br/>`,theme:"interlaced",commands:{"/usr/local/bin/md":Gd},files:{"~/Documents/talks/ipfs-in-js-2022/0.md":{content:jd},"~/Documents/talks/ipfs-in-js-2022/1.md":{content:Kd},"~/Documents/talks/ipfs-in-js-2022/2.md":{content:zd},"~/Documents/talks/ipfs-in-js-2022/3.md":{content:Wd},"~/Documents/talks/ipfs-in-js-2022/4.md":{content:Yd},"~/Documents/talks/ipfs-in-js-2022/5.md":{content:Qd},"~/Documents/talks/ipfs-in-js-2022/6.md":{content:Vd},"~/Documents/talks/ipfs-in-js-2022/7.md":{content:$d},"~/Documents/talks/ipfs-in-js-2022/8.md":{content:Xd},"~/Documents/talks/ipfs-in-js-2022/9.md":{content:qd},"~/Documents/talks/ipfs-in-js-2022/10.md":{content:Jd},"~/Documents/talks/ipfs-in-js-2022/11.md":{content:Zd},"~/Documents/talks/ipfs-in-js-2022/12.md":{content:e4},"~/Documents/talks/ipfs-in-js-2022/13.md":{content:t4},"~/Documents/talks/ipfs-in-js-2022/14.md":{content:n4},"~/Documents/talks/ipfs-in-js-2022/15.md":{content:r4},"~/Documents/talks/ipfs-in-js-2022/16.md":{content:i4}},history:"cli-history",user:"alex"});
